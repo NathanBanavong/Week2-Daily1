@@ -55,6 +55,7 @@
 
     <Button
         android:id="@+id/btn_IME"
+        android:onClick="onIME"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate IME" />

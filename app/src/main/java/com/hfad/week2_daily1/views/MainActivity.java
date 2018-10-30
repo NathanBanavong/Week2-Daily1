@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -130,6 +129,11 @@ public class MainActivity extends Activity {
     public void onPeople(View view) {
         Intent goTo = new Intent(getApplicationContext(), PersonActivity.class);
         startActivity(goTo);
+    }
+
+    public void onIME(View view) {
+        Intent thisway = new Intent(getApplicationContext(), IME.class);
+        startActivity(thisway);
     }
 
 }
