@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Week2-Daily1</string>
+    <string name="title_activity_person">PersonActivity</string>
+    <string name="title_activity_display_people">DisplayPeople</string>
 </resources>

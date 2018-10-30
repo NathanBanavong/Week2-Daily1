@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".views.MainActivity">
 
     <TextView
+        android:id="@+id/mainView_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Press button to do activity" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pictureIntent"
+        android:text="Take a picture!" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/ed_callNumber"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="phoneIntent"
+        android:text="Call a number" />
+
+    <EditText
+        android:id="@+id/ed_msgSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="msgIntent"
+        android:text="Send message" />
+
+    <TextView
+        android:id="@+id/PictureText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below are your pictures" />
+
+    <!--AND THIS IS WHERE MY PICTURE WOULD'VE BEEN IF MY CAMERA WORKED-->
+    <ImageView
+        android:id="@+id/imgShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_IME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate IME" />
+
+    <Button
+        android:id="@+id/btn_createPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPeople"
+        android:text="Add Profile" />
+
+    <!--Input info for the Person object-->
+
+
+</LinearLayout>

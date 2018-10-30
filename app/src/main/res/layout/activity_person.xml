@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonActivity">
+
+    <EditText
+        android:id="@+id/edPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/edPersonAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age" />
+
+    <EditText
+        android:id="@+id/edPersonGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <Button
+        android:id="@+id/btn_AddPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createPerson"
+        android:text="Create Person" />
+
+    <Button
+        android:id="@+id/btn_DisplayPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showPeopleList"
+        android:text="List People" />
+
+</LinearLayout>
